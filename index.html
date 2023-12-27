@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Swiper JS Slider</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+    <nav class="bg-slate-900 py-2">
+        <div class="w-[85%] mx-auto flex items-center">
+            <h3 class="text-3xl font-semibold text-slate-300 uppercase">Simple <span class="bg-slate-100 px-1 rounded text-slate-700">Naruto</span> Slider</h3>
+        </div>
+    </nav>
+   
+    <section class="w-full py-10">
+        <div class="w-[85%] mx-auto rounded">
+            <div class="swiper rounded">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/slide-1.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-2.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-3.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-4.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-6.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-7.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-8.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-9.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-10.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-11.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-12.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-13.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-14.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-15.jpg" alt="slide-1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/slide-16.jpg" alt="slide-1">
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: 'swiper-button-next',
+                prevEl: 'swiper-button-prev'
+            },
+
+            pagination: {
+                el: 'swiper-pagination',
+                clickable: true
+            }, 
+
+            autoplay: {
+                delay: 3000, // 3 seconds
+                disableOnInteraction: false // Makes sure the swiper motion cotinues ... 
+            }
+        });
+    </script>
+</body>
+</html>
